@@ -1,0 +1,9 @@
+table {
+    width: 100%;
+    background-color: whitesmoke;
+    font-size: smaller;
+    font-style: normal;
+}
+table, th, td {
+    border: 1px solid black;
+  }
