@@ -62,78 +62,9 @@ const StudentDetail = () => {
     };
 
     return (
-        // <div>
-        //     {student || id === 'new' ? (
-        //         <div>
-        //             <h2>{id === 'new' ? 'Add New Student' : isEditing ? 'Edit Student' : 'Student Details'}</h2>
-        //             <label>
-        //                 Name:
-        //                 <input
-        //                     type="text"
-        //                     name="name"
-        //                     value={formData.name}
-        //                     onChange={handleInputChange}
-        //                     readOnly={!isEditing}
-        //                 />
-        //             </label>
-        //             <br/>
-        //             <label>
-        //                 Age:
-        //                 <input
-        //                     type="number"
-        //                     name="age"
-        //                     value={formData.age}
-        //                     onChange={handleInputChange}
-        //                     readOnly={!isEditing}
-        //                 />
-        //             </label>
-        //             <br />
-        //             <label>
-        //                 Date of Birth:
-        //                 <input
-        //                     type="date"
-        //                     name="dob"
-        //                     value={formData.dob}
-        //                     onChange={handleInputChange}
-        //                     readOnly={!isEditing}
-        //                 />
-        //             </label>
-        //             <br />
-        //             <label>
-        //                 Course:
-        //                 <input
-        //                     type="text"
-        //                     name="course"
-        //                     value={formData.course}
-        //                     onChange={handleInputChange}
-        //                     readOnly={!isEditing}
-        //                 />
-        //             </label>
-        //             {id === 'new' ? (
-        //                 <div>
-        //                     <button onClick={handleSave}>Save</button>
-        //                     <button onClick={() => navigate('/')}>Cancel</button>
-        //                 </div>
-        //             ) : isEditing ? (
-        //                 <div>
-        //                     <button onClick={handleSave}>Save</button>
-        //                     <button onClick={() => setIsEditing(false)}>Cancel</button>
-        //                 </div>
-        //             ) : (
-        //                 <div>
-        //                     <button onClick={() => setIsEditing(true)}>Edit</button>
-        //                     <button onClick={handleDelete}>Delete</button>
-        //                     <button onClick={() => navigate('/')}>Back to List</button>
-        //                 </div>
-        //             )}
-        //         </div>
-        //     ) : (
-        //         <p>Loading...</p>
-        //     )}
-        // </div>
         <div className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md">
   {student || id === 'new' ? (
-    <div>
+    <div >
       <h2 className="text-2xl font-semibold mb-6 text-gray-800">
         {id === 'new' ? 'Add New Student' : isEditing ? 'Edit Student' : 'Student Details'}
       </h2>
