@@ -9,7 +9,7 @@ const StudentList = () => {
   const [nameFilter, setNameFilter] = useState("");
   const [page, setPage] = useState(1);
 
-  const pageSize = 2; // Update this if your page size is different
+  const pageSize = 2; 
 
   const fetchStudents = async (url) => {
     try {
